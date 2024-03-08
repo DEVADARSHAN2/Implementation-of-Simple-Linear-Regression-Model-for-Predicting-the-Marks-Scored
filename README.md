@@ -27,7 +27,7 @@ Program to implement the simple linear regression model for predicting the marks
 Developed by: DEVADARSHAN A S
 RegisterNumber: 212222110007
 ```
-# IMPORT REQUIRED LIBRARIES
+## IMPORT REQUIRED LIBRARIES
 ```
 import pandas as pd
 import numpy as np
@@ -43,7 +43,7 @@ print(x)
 y = df.iloc[:,1].values
 print(y)
 ```
-# SPLITTING DATASET INTO TRAINING AND TESTING DATA
+## SPLITTING DATASET INTO TRAINING AND TESTING DATA
 ```
 x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=1/3,random_state=0)
 regressor=LinearRegression()
@@ -52,7 +52,7 @@ y_pred = regressor.predict(x_test)
 print(y_pred)
 print(y_test)
 ```
-# GRAPH PLOT FOR TRAINING DATA
+## GRAPH PLOT FOR TRAINING DATA
 ```
 plt.scatter(x_train,y_train,color='red')
 plt.plot(x_train,regressor.predict(x_train),color='black')
@@ -61,7 +61,7 @@ plt.xlabel("Hours")
 plt.ylabel("Scores")
 plt.show()
 ```
-# GRAPH PLOT FOR TESTING DATA
+## GRAPH PLOT FOR TESTING DATA
 ```
 plt.scatter(x_test,y_test,color='red')
 plt.plot(x_test,y_pred,color='black')
@@ -70,7 +70,7 @@ plt.xlabel('Hours')
 plt.ylabel('Scores')
 plt.show()
 ```
-# CALCULATE MEAN SQUARED ERROR
+## CALCULATE MEAN SQUARED ERROR
 ```
 mse=mean_squared_error(y_test,y_pred)
 print('MSE = ',mse)
@@ -84,29 +84,29 @@ print("RMSE= ",rmse)
 ```
 
 ## Output:
-### 1.Dataset
-![o1](https://github.com/BALA291/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/120717501/94a2a5f3-c044-494f-8380-bb40172f3475)
+### Dataset
+![image](https://github.com/DEVADARSHAN2/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119432150/f8764d0f-b615-41e5-b009-9f536c44950b)
 
-### 2.Head
-![head](https://github.com/BALA291/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/120717501/e4d0146f-da6c-482a-912d-2fa4a28c9f75)
+### Head
+![image](https://github.com/DEVADARSHAN2/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119432150/c1cff07a-3a3b-4ddb-91db-6555fb29d5a7)
 
-### 3.Tail
-![tail](https://github.com/BALA291/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/120717501/f89a2e9e-a82b-4937-9b4c-fee11dbda433)
+### Tail
+![image](https://github.com/DEVADARSHAN2/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119432150/d0a05ee3-5a24-476c-b5a0-e1027cf8243b)
 
-### 4.X and Y values
-![x and y](https://github.com/BALA291/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/120717501/b7f70089-174d-4798-b1e6-a4f35c206e87)
+### X and Y values
+![image](https://github.com/DEVADARSHAN2/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119432150/8d311101-fe65-44b6-8b01-f3fd74ace3c9)
 
-### 5.Predicted values
-![predicted](https://github.com/BALA291/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/120717501/aad7bf35-798d-4614-b26f-1b856579dd56)
+### Predicted values
+![image](https://github.com/DEVADARSHAN2/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119432150/ed83eccd-9b14-409c-8c53-358941b039ac)
 
-### 6.Training set
-![training](https://github.com/BALA291/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/120717501/668cb9c9-dac3-4e6c-8b34-b5f15e8be277)
+### Training set
+![image](https://github.com/DEVADARSHAN2/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119432150/130f8975-c37f-4108-9d2f-d725df3ae8f7)
 
-### 7. Testing set
-![testing](https://github.com/BALA291/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/120717501/6a941bf6-5397-430b-8a70-1e8d7d3a6bc6)
+###  Testing set
+![image](https://github.com/DEVADARSHAN2/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119432150/1f0ad825-699a-4440-96ae-04c4d6145748)
 
-### 8. Error calculation
-![errors](https://github.com/BALA291/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/120717501/f450f215-771e-4069-b429-73b79a8119cc)
+### Error calculation
+![image](https://github.com/DEVADARSHAN2/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119432150/6aaf04ed-6739-4d67-a4db-b6b2b6cea827)
 
 
 
